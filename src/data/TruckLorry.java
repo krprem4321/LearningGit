@@ -27,7 +27,7 @@ public class TruckLorry extends Vehicle {
         } else {
             truckLorry = new TruckLorry();
         }
-
+// Close the Scanner resource
         sc.close();
         return truckLorry;
     }
