@@ -3,31 +3,24 @@ package data;
 import java.util.Scanner;
 
 public class Bike extends Vehicle {
-    private static Bike bike;
 
+    @Override
+    public void stop() {
+        super.stop();
+    }
 
-    public static Bike getBike() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome To Bike Type Vehicle");
-        if (bike != null) {
-            System.out.println("Enter bike color : ");
-            String color = sc.next();
-            System.out.println("Enter bike brand : ");
-            String brand = sc.next();
-            System.out.println("Enter bike type : ");
-            String type = sc.next();
-            System.out.println("Enter bike regId : ");
-            String regId = sc.next();
+    @Override
+    public void start() {
+        super.start();
+    }
 
-            bike.setColor(color);
-            bike.setBrand(brand);
-            bike.setRegId(regId);
-            bike.setType(type);
-        } else {
-            bike = new Bike();
-        }
+    @Override
+    public void applyBrake() {
+        super.applyBrake();
+    }
 
-        sc.close();
-        return bike;
+    @Override
+    public void pressHorn() {
+        super.pressHorn();
     }
 }

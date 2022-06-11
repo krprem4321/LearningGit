@@ -1,18 +1,33 @@
 package data;
 
-public class Car extends Vehicle{
-   private Car car;
+import java.util.Scanner;
 
-    public Car getCar(){
-        if (car!=null){
-           car.setColor("Red");
-           car.setRegId("Br012345");
-           car.setBrand("AudiQ7");
-            car.setType("Four Wheeler");
-        }else {
-            car=new Car();
-        }
-        return car;
+public class Car extends Vehicle {
+    Vehicle vehicle = new Vehicle();
+
+    public static void createCar() {
+
     }
+
+    @Override
+    public void start() {
+        super.start();
+    }
+
+    @Override
+    public void stop() {
+        super.stop();
+    }
+
+    @Override
+    public void applyBrake() {
+        super.applyBrake();
+    }
+
+    @Override
+    public void pressHorn() {
+        super.pressHorn();
+    }
+
 
 }

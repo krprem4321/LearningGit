@@ -44,18 +44,23 @@ public class Vehicle implements VehicleFunction {
     }
 
     @Override
-    public void start(String brand) {
-        System.out.println(brand+" vehicle Start !!!");
+    public void start() {
+        System.out.println(" vehicle Start !!!");
     }
 
     @Override
-    public void stop(String brand) {
-        System.out.println(brand+" vehicle Stopped !!!");
+    public void stop() {
+        System.out.println(" vehicle Stopped !!!");
 
     }
 
     @Override
     public void applyBrake() {
         System.out.println("Brake Applied !!! ");
+    }
+
+    @Override
+    public void pressHorn() {
+        System.out.println("Applied Horn !!!");
     }
 }
